@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://solitarybear.com/sitemap.xml
