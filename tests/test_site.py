@@ -55,6 +55,15 @@ class SiteChecks(unittest.TestCase):
         for repo in ("Task-Aware-Semantic-Grasp-Quality-Prediction", "Daily-Score-Tracker", "PocketLog"):
             self.assertIn("https://github.com/solitarybear/" + repo, text)
 
+    def test_contribution_and_public_email(self):
+        text = (PUBLIC / "index.html").read_text()
+        self.assertIn("https://github.com/deepset-ai/haystack/pull/13576", text)
+        self.assertIn('id="open-source"', text)
+        start = text.index("<!--email_off-->")
+        end = text.index("<!--/email_off-->")
+        self.assertLess(start, text.index('href="mailto:'))
+        self.assertLess(text.index('href="mailto:'), end)
+
     def test_search_metadata(self):
         sitemap = ET.parse(PUBLIC / "sitemap.xml")
         locations = sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")

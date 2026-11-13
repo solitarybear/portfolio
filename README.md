@@ -25,14 +25,14 @@ python3 -m unittest discover -s tests -v
 
 Only `public/` gets published. Edit `public/index.html` for text and links; edit `public/styles.css` for colors and layout. Refresh the browser to see changes.
 
-This version emphasizes AI and machine learning using the supplied résumé and public GitHub projects. Robotics remains an application area in the research and experience sections; the desktop apps are presented as analytics and software work, not AI projects. Review the wording before publishing, especially internship details, education dates, and the “Present” robotics-club entry. Project diagrams are concept illustrations, not screenshots or experimental results. No unverified performance numbers or employment availability are displayed.
+This version emphasizes AI and machine learning using the supplied résumé and public GitHub projects. Robotics remains an application area in the research and experience sections; the desktop apps are presented as analytics and software work, not AI projects. Review the wording before publishing, especially internship details, education dates, and the “Present” robotics-club entry. The design uses a quiet dark palette, side navigation, and text-led project summaries. The open-source section links to the merged Haystack PR #13576, verified on 13 November 2026. Contribution details are maintained manually; revisit GitHub when updating this section. No unverified performance numbers or employment availability are displayed.
 
 The email `iiitbhopal23u01070@gmail.com` will be publicly visible. LinkedIn and GitHub links are included. The original résumé PDF, phone number, certificates, and private files are not included. If you later want a downloadable résumé, first make a public copy with only the details you want to share, put it in `public/`, and add a link. Update the footer year as needed.
 
 ## 3. Push to your GitHub
 
 1. Sign in to <https://github.com/new> as `solitarybear`.
-2. Name the repository **solitarybear-portfolio**. Choose your preferred visibility. Leave “Add a README”, license, and .gitignore unchecked because this folder already contains files.
+2. Name the repository **portfolio**. Choose your preferred visibility. Leave “Add a README”, license, and .gitignore unchecked because this folder already contains files.
 3. Create the repository. Then run:
 
 ```bash
@@ -40,13 +40,13 @@ cd "$HOME/GitHub Projects/solitarybear-portfolio"
 git status
 git add .
 git commit -m "Create personal portfolio"
-git remote add origin https://github.com/solitarybear/solitarybear-portfolio.git
+git remote add origin https://github.com/solitarybear/portfolio.git
 git push -u origin main
 ```
 
-The folder has already been initialized as a Git repository with a `main` branch. No commit, remote, or GitHub repository was created automatically. If Git asks for your identity, set `git config user.name "Aman Agarwal"` and `git config user.email "YOUR_GITHUB_COMMIT_EMAIL"` in this folder using your actual verified or GitHub no-reply address. Replace the placeholder before running the email command.
+This project is already connected to `solitarybear/portfolio` and published with Cloudflare Pages. Skip initial repository creation and remote setup when working in this existing checkout; use the updating commands below. If Git asks for your identity, set `git config user.name "Aman Agarwal"` and `git config user.email "YOUR_GITHUB_COMMIT_EMAIL"` in this folder using your actual verified or GitHub no-reply address. Replace the placeholder before running the email command.
 
-GitHub requires a supported sign-in method, such as a credential manager, a personal access token for HTTPS, or SSH; your account password will not work for Git pushes. Do not paste tokens into website files or this README. If you use SSH already, use `git@github.com:solitarybear/solitarybear-portfolio.git` as the remote instead. If `origin` already exists, inspect it with `git remote -v` before changing it.
+GitHub requires a supported sign-in method, such as a credential manager, a personal access token for HTTPS, or SSH; your account password will not work for Git pushes. Do not paste tokens into website files or this README. If you use SSH already, use `git@github.com:solitarybear/portfolio.git` as the remote instead. If `origin` already exists, inspect it with `git remote -v` before changing it.
 
 ## 4. Deploy to Cloudflare Pages
 
