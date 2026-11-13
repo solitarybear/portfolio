@@ -28,7 +28,6 @@ p { color: var(--muted); }
 nav { display: flex; flex-direction: column; gap: 7px; }
 nav a { padding: 10px; border-radius: 5px; font-size: 14px; color: #c4c9cc; }
 nav a:hover { background: #202528; }
-nav a span { color: #85938c; font: 10px monospace; margin-right: 20px; }
 .sidebar-bottom { margin-top: auto; padding-top: 50px; font-size: 12px; }
 .sidebar-bottom p { margin-bottom: 16px; color: #c4c9cc; }
 .sidebar-bottom p span { color: #929b9f; font-size: 11px; }
@@ -105,8 +104,7 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15
   .sidebar { position: static; width: auto; padding: 24px; border-right: 0; border-bottom: 1px solid var(--line); }
   .identity { font-size: 15px; } .sidebar-label, .sidebar-bottom { display: none; }
   nav { flex-direction: row; flex-wrap: wrap; gap: 4px 19px; margin-top: 22px; }
-  nav a { padding: 4px 0; font-size: 12px; } nav a span { display: none; }
-  .content { margin: 0 auto; padding-inline: 28px; max-width: 720px; }
+  nav a { padding: 4px 0; font-size: 12px; }   .content { margin: 0 auto; padding-inline: 28px; max-width: 720px; }
   .hero { padding-top: 48px; } .hello { margin-top: 32px; } h1 { font-size: clamp(38px, 8vw, 62px); }
   .lead { font-size: 23px; } .hero-foot { margin-top: 35px; } section { padding-block: 45px; }
   .section-title { gap: 10px; } h2 { font-size: 24px; } .project { padding: 21px; }
