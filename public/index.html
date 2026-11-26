@@ -12,22 +12,25 @@
   <meta property="og:description" content="Machine learning research, useful software, and contributions to open source.">
   <meta property="og:url" content="https://solitarybear.com/">
   <link rel="icon" href="favicon.svg?v=20261113" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261127b">
+  <link rel="stylesheet" href="styles.css?v=20261127c">
+  <script src="portfolio.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="mast"><div class="mast-inner">
   <a class="wordmark" href="#home">aman<span>.</span>agarwal</a>
-  <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#open-source">Open source</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <p class="rail-role">Machine learning<br>&amp; robotics</p><button class="menu" hidden aria-expanded="false" aria-controls="sections">Sections</button>
+  <nav id="sections" aria-label="Main navigation"><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#open-source">Open source</a><a href="#education">Education</a><a href="#skills">Toolkit</a><a href="#about">About</a><a href="#contact">Contact</a></nav><a class="rail-footer" href="https://github.com/solitarybear">@solitarybear ↗</a>
 </div></header>
 <main id="main" class="content">
   <header class="hero" id="home">
-    <p class="hello">Hi, I’m</p>
-    <h1>Aman Agarwal<span>.</span></h1>
+    <p class="hello">Machine learning / Robotics</p>
+    <h1>Aman <em>Agarwal</em><span>.</span></h1>
     <p class="hero-summary">I build machine learning tools for computer vision and robotics. I study electronics at IIIT Bhopal and contribute to Haystack.</p>
-    <p class="location">Bhopal, India · Class of 2027</p>
-    <div class="actions"><a class="button" href="#work">View projects <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+    <p class="location">Bhopal, India <time id="clock"></time></p>
+    <div class="actions"><a class="button" href="#work">View projects <span aria-hidden="true">↗</span></a><a class="quiet-link" href="resume.html">Résumé <span aria-hidden="true">↗</span></a></div>
 
+    <div class="hero-social"><a href="https://github.com/solitarybear">GitHub ↗</a><a href="https://linkedin.com/in/solitarybear">LinkedIn ↗</a></div>
   </header>
   <section id="experience" aria-labelledby="experience-title">
     <div class="section-title"><h2 id="experience-title">Experience & community</h2></div>
@@ -41,12 +44,12 @@
   <section id="work" aria-labelledby="work-title">
     <div class="section-title"><h2 id="work-title">Selected projects</h2><a class="section-link" href="https://github.com/solitarybear?tab=repositories">All repositories ↗</a></div>
     <div class="projects">
-      <article class="project"><p class="eyebrow">MULTIMODAL LEARNING</p><h3><a href="https://github.com/solitarybear/Task-Aware-Semantic-Grasp-Quality-Prediction">Task-aware grasp prediction <span aria-hidden="true">↗</span></a></h3><p>Combining RGB-D input and task descriptions to score grasp quality. Exploring cross-modal transformers, a FiLM-conditioned ResNet baseline, and physics-informed prediction.</p><ul class="tags" aria-label="Technologies"><li>PyTorch</li><li>Transformers</li><li>Computer vision</li></ul><a class="project-link" href="https://github.com/solitarybear/Task-Aware-Semantic-Grasp-Quality-Prediction">Explore SemGrasp ↗</a></article>
-      <article class="project"><p class="eyebrow">COMPUTER VISION</p><h3><a href="https://github.com/solitarybear/Driver-Drowsiness-Detection">Driver Drowsiness Detection <span aria-hidden="true">↗</span></a></h3><p>A webcam-based MATLAB project that monitors eye activity with a Haar cascade classifier and triggers an alert after a sustained absence of detected eyes.</p><ul class="tags" aria-label="Technologies"><li>MATLAB</li><li>Haar cascades</li><li>Image processing</li></ul><a class="project-link" href="https://github.com/solitarybear/Driver-Drowsiness-Detection">View repository ↗</a></article>
+      <article class="project"><p class="eyebrow">MULTIMODAL LEARNING</p><h3><a href="https://github.com/solitarybear/Task-Aware-Semantic-Grasp-Quality-Prediction">Task-aware grasp prediction <span aria-hidden="true">↗</span></a></h3><p>Combining RGB-D input and task descriptions to score grasp quality. Exploring cross-modal transformers, a FiLM-conditioned ResNet baseline, and physics-informed prediction.</p><details class="stack"><summary>Technology stack</summary><ul class="tags" aria-label="Technologies"><li>PyTorch</li><li>Transformers</li><li>Computer vision</li></ul></details><a class="project-link" href="https://github.com/solitarybear/Task-Aware-Semantic-Grasp-Quality-Prediction">Explore SemGrasp ↗</a></article>
+      <article class="project"><p class="eyebrow">COMPUTER VISION</p><h3><a href="https://github.com/solitarybear/Driver-Drowsiness-Detection">Driver Drowsiness Detection <span aria-hidden="true">↗</span></a></h3><p>A webcam-based MATLAB project that monitors eye activity with a Haar cascade classifier and triggers an alert after a sustained absence of detected eyes.</p><details class="stack"><summary>Technology stack</summary><ul class="tags" aria-label="Technologies"><li>MATLAB</li><li>Haar cascades</li><li>Image processing</li></ul></details><a class="project-link" href="https://github.com/solitarybear/Driver-Drowsiness-Detection">View repository ↗</a></article>
     <details class="more"><summary><span class="closed">Show 2 more projects</span><span class="opened">Show less</span></summary>
 <div class="extra-items">
-      <article class="project"><p class="eyebrow">PYTHON / DATA ANALYTICS</p><h3><a href="https://github.com/solitarybear/Daily-Score-Tracker">Daily Score Tracker <span aria-hidden="true">↗</span></a></h3><p>An offline Ubuntu app for tracking daily activities. Flexible scoring, habit trends, and cross-activity correlations, with versioned rules to preserve historical records.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>GTK4 / libadwaita</li><li>SQLite</li></ul><a class="project-link" href="https://github.com/solitarybear/Daily-Score-Tracker">View repository ↗</a></article>
-      <article class="project"><p class="eyebrow">PYTHON / DESKTOP SOFTWARE</p><h3><a href="https://github.com/solitarybear/PocketLog">PocketLog <span aria-hidden="true">↗</span></a></h3><p>An offline expense-sharing app with equal or custom splits, participant reports, and settlement suggestions. Integer-paise arithmetic keeps money calculations precise.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>PySide6 / Qt</li><li>SQLite</li></ul><a class="project-link" href="https://github.com/solitarybear/PocketLog">View repository ↗</a></article>
+      <article class="project"><p class="eyebrow">PYTHON / DATA ANALYTICS</p><h3><a href="https://github.com/solitarybear/Daily-Score-Tracker">Daily Score Tracker <span aria-hidden="true">↗</span></a></h3><p>An offline Ubuntu app for tracking daily activities. Flexible scoring, habit trends, and cross-activity correlations, with versioned rules to preserve historical records.</p><details class="stack"><summary>Technology stack</summary><ul class="tags" aria-label="Technologies"><li>Python</li><li>GTK4 / libadwaita</li><li>SQLite</li></ul></details><a class="project-link" href="https://github.com/solitarybear/Daily-Score-Tracker">View repository ↗</a></article>
+      <article class="project"><p class="eyebrow">PYTHON / DESKTOP SOFTWARE</p><h3><a href="https://github.com/solitarybear/PocketLog">PocketLog <span aria-hidden="true">↗</span></a></h3><p>An offline expense-sharing app with equal or custom splits, participant reports, and settlement suggestions. Integer-paise arithmetic keeps money calculations precise.</p><details class="stack"><summary>Technology stack</summary><ul class="tags" aria-label="Technologies"><li>Python</li><li>PySide6 / Qt</li><li>SQLite</li></ul></details><a class="project-link" href="https://github.com/solitarybear/PocketLog">View repository ↗</a></article>
 </div></details>
     </div>
   </section>
@@ -63,10 +66,14 @@
     </article>
     <a class="quiet-link more-contributions" href="https://github.com/pulls?q=is%3Apr+author%3Asolitarybear">View contributions on GitHub ↗</a>
   </section>
+  <section id="education" aria-labelledby="education-title">
+    <div class="section-title"><h2 id="education-title">Education</h2></div>
+    <article class="experience-row"><p class="period">2023 — 2027</p><div><h3>IIIT Bhopal</h3><p class="organization">B.Tech · Electronics and Communication Engineering</p><p>Expected June 2027</p><ul class="tags"><li>Digital signal processing</li><li>Microprocessors</li><li>VLSI design</li></ul></div></article>
+  </section>
   <section id="about" aria-labelledby="about-title">
     <div class="section-title"><h2 id="about-title">About</h2></div>
     <div class="about-copy"><p>I’m an Electronics and Communication Engineering undergraduate drawn to the practical side of AI: how models learn, how we evaluate them, and how they fit into reliable software.</p><p>My work spans multimodal grasp prediction, neural-network research at IIT (BHU), and offline tools for tracking habits and shared expenses. I also contribute fixes to open-source projects, with a focus on clear behavior and regression tests.</p></div>
-    <div class="facts"><div><span>FOCUS</span><p>Machine learning & computer vision</p></div><div><span>EDUCATION</span><p>B.Tech, ECE · IIIT Bhopal<br><small>2023–2027 · Expected June 2027</small></p></div></div>
+
   </section>
   <section id="skills" aria-labelledby="skills-title">
     <div class="section-title"><h2 id="skills-title">Skills & tools</h2></div>
@@ -78,6 +85,10 @@
     <div class="section-title"><h2 id="contact-title">Get in touch</h2></div>
     <p class="contact-copy">Have a question about my work, an interesting research problem, or a project in mind? Let’s talk.</p>
     <a class="email-link" href="mailto:iiitbhopal23u01070@gmail.com">iiitbhopal23u01070@gmail.com <span aria-hidden="true">↗</span></a>
+    <button id="copy" hidden>Copy email</button><p id="copy-status" role="status"></p>
+    <form id="draft" hidden><div class="fields"><label>Your name<input name="sender" autocomplete="name" maxlength="100" required></label><label>Your email<input name="reply" type="email" autocomplete="email" required></label></div>
+    <label>Message<textarea name="message" rows="4" maxlength="2000" required></textarea></label>
+    <div class="draft-actions"><small id="count">0 / 2000</small><button>Open email draft ↗</button></div></form>
     <div class="contact-links"><a href="https://github.com/solitarybear">GitHub ↗</a><a href="https://linkedin.com/in/solitarybear">LinkedIn ↗</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=iiitbhopal23u01070%40gmail.com">Write in Gmail ↗</a></div>
   </section>
   <!--/email_off-->

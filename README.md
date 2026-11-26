@@ -16,7 +16,7 @@ The design uses a restrained dark palette, readable typography, and responsive n
 - Cloudflare Pages hosting with GitHub integration
 - Python's standard library for local checks
 
-No JavaScript framework, package installation, or build step is required. Contact links work through email and Gmail; there is no contact-form backend or visitor tracking.
+The site uses plain HTML, CSS and a small local script. The contact form opens a draft in the visitor’s email app. Direct email and Gmail links also work without JavaScript. The résumé supports printing and saving as PDF.
 
 ## Run locally
 

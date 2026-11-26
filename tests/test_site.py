@@ -50,7 +50,7 @@ class SiteChecks(unittest.TestCase):
             self.assertIn(expected, text)
         self.assertNotIn("tel:", text)
         self.assertNotIn(".pdf", text)
-        self.assertNotIn("<script", text)
+        self.assertIn('src="portfolio.js" defer', text)
         self.assertIn('href="https://solitarybear.com/"', text)
         for repo in ("Task-Aware-Semantic-Grasp-Quality-Prediction", "Daily-Score-Tracker", "PocketLog"):
             self.assertIn("https://github.com/solitarybear/" + repo, text)
