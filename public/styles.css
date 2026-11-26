@@ -134,3 +134,19 @@ nav { flex-direction: row; flex-wrap: wrap; gap: 2px; }
   nav a { padding: 4px 0; font-size: 13px; }
   .section-link { padding-left: 0; }
 }
+
+.more { grid-column: 1 / -1; }
+.more summary { width: fit-content; padding: 9px 15px; margin: 12px auto; cursor: pointer; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 7px; font-size: 14px; }
+.more summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.more .opened, .more[open] .closed { display: none; }
+.more[open] .opened { display: inline; }
+.projects .extra-items { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,260px),1fr)); gap: 18px; }
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes arrive { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: none; } }
+  .hero { animation: arrive 280ms ease-out; }
+  @media (hover: hover) and (pointer: fine) {
+    .project { transition: transform 180ms ease-out, border-color 180ms ease-out; }
+    .project:hover { transform: translateY(-3px); }
+    .more summary:hover { border-color: var(--accent); }
+  }
+}
