@@ -12,40 +12,31 @@
   <meta property="og:description" content="Machine learning research, useful software, and contributions to open source.">
   <meta property="og:url" content="https://solitarybear.com/">
   <link rel="icon" href="favicon.svg?v=20261113" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261113-menu">
+  <link rel="stylesheet" href="styles.css?v=20261127">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<aside class="sidebar">
-  <a class="identity" href="#home" aria-label="Aman Agarwal home"><span class="monogram" aria-hidden="true">aa.</span><span>Aman Agarwal<small>@solitarybear</small></span></a>
-  <p class="sidebar-label">PORTFOLIO / 2026</p>
-  <nav aria-label="Main navigation">
-    <a href="#about">About</a>
-    <a href="#work">Projects</a>
-    <a href="#open-source">Open source</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div class="sidebar-bottom"><p>Bhopal, India<br><span>Learning. Building. Contributing.</span></p><a href="https://github.com/solitarybear">GitHub ↗</a><a href="https://linkedin.com/in/solitarybear">LinkedIn ↗</a></div>
-</aside>
+<header class="mast"><div class="mast-inner">
+  <a class="wordmark" href="#home">aman<span>.</span>agarwal</a>
+  <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#open-source">Open source</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</div></header>
 <main id="main" class="content">
   <header class="hero" id="home">
-    <p class="eyebrow"><span class="dot" aria-hidden="true"></span> AI & MACHINE LEARNING</p>
-    <p class="hello">Hello, I’m</p>
+    <p class="hello">Hi, I’m</p>
     <h1>Aman Agarwal<span>.</span></h1>
-    <p class="lead">Learning from data.<br>Building software that makes it useful.</p>
-    <p class="hero-summary">I work on machine learning, computer vision, and Python applications. Currently studying ECE at IIIT Bhopal and contributing to open-source AI tools.</p>
+    <p class="hero-summary">I build machine learning tools for computer vision and robotics. I study electronics at IIIT Bhopal and contribute to Haystack.</p>
+    <p class="location">Bhopal, India · Class of 2027</p>
     <div class="actions"><a class="button" href="#work">View projects <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
-    <div class="hero-foot"><span>IIIT Bhopal · Class of 2027</span><a href="https://github.com/deepset-ai/haystack/pull/13576">Contributor to Haystack <span aria-hidden="true">↗</span></a></div>
+
   </header>
-  <section id="about" aria-labelledby="about-title">
-    <div class="section-title"><span class="section-number">01</span><h2 id="about-title">About</h2></div>
-    <div class="about-copy"><p>I’m an Electronics and Communication Engineering undergraduate drawn to the practical side of AI: how models learn, how we evaluate them, and how they fit into reliable software.</p><p>My work spans multimodal grasp prediction, neural-network research at IIT (BHU), and offline tools for tracking habits and shared expenses. I also contribute fixes to open-source projects, with a focus on clear behavior and regression tests.</p></div>
-    <div class="facts"><div><span>FOCUS</span><p>Machine learning & computer vision</p></div><div><span>EDUCATION</span><p>B.Tech, ECE · IIIT Bhopal<br><small>2023–2027 · Expected June 2027</small></p></div></div>
+  <section id="experience" aria-labelledby="experience-title">
+    <div class="section-title"><h2 id="experience-title">Experience & community</h2></div>
+    <article class="experience-row"><p class="period">MAY — JUL 2025</p><div><h3>ML Research Intern</h3><p class="organization">IIT (BHU), Varanasi</p><p>Developed ANN and recurrent-network approaches for joint-angle prediction. Worked on sensor fusion for real-time estimation and PPO/SAC reinforcement-learning control, applied to humanoid-robot stability.</p><ul class="tags"><li>Neural networks</li><li>Sensor fusion</li><li>Reinforcement learning</li></ul></div></article>
+    <article class="experience-row"><p class="period">NOV 2025 — PRESENT</p><div><h3>Core Technical Team Member</h3><p class="organization">Spark Robotics Club · IIIT Bhopal</p><p>Contributing to competition robots and hands-on technical workshops, collaborating across design, programming, and deployment.</p></div></article>
+    <article class="experience-row"><p class="period">2024</p><div><h3>College Internal Hackathon · Runner-up</h3><p>Built a precision-agriculture project combining autonomous drone simulation and machine-learning yield prediction.</p></div></article>
   </section>
   <section id="work" aria-labelledby="work-title">
-    <div class="section-title"><span class="section-number">02</span><h2 id="work-title">Selected projects</h2><a class="section-link" href="https://github.com/solitarybear?tab=repositories">All repositories ↗</a></div>
+    <div class="section-title"><h2 id="work-title">Selected projects</h2><a class="section-link" href="https://github.com/solitarybear?tab=repositories">All repositories ↗</a></div>
     <div class="projects">
       <article class="project"><p class="eyebrow">MULTIMODAL LEARNING</p><h3><a href="https://github.com/solitarybear/Task-Aware-Semantic-Grasp-Quality-Prediction">Task-aware grasp prediction <span aria-hidden="true">↗</span></a></h3><p>Combining RGB-D input and task descriptions to score grasp quality. Exploring cross-modal transformers, a FiLM-conditioned ResNet baseline, and physics-informed prediction.</p><ul class="tags" aria-label="Technologies"><li>PyTorch</li><li>Transformers</li><li>Computer vision</li></ul><a class="project-link" href="https://github.com/solitarybear/Task-Aware-Semantic-Grasp-Quality-Prediction">Explore SemGrasp ↗</a></article>
       <article class="project"><p class="eyebrow">COMPUTER VISION</p><h3><a href="https://github.com/solitarybear/Driver-Drowsiness-Detection">Driver Drowsiness Detection <span aria-hidden="true">↗</span></a></h3><p>A webcam-based MATLAB project that monitors eye activity with a Haar cascade classifier and triggers an alert after a sustained absence of detected eyes.</p><ul class="tags" aria-label="Technologies"><li>MATLAB</li><li>Haar cascades</li><li>Image processing</li></ul><a class="project-link" href="https://github.com/solitarybear/Driver-Drowsiness-Detection">View repository ↗</a></article>
@@ -54,7 +45,7 @@
     </div>
   </section>
   <section id="open-source" aria-labelledby="oss-title">
-    <div class="section-title"><span class="section-number">03</span><h2 id="oss-title">Open source</h2></div>
+    <div class="section-title"><h2 id="oss-title">Open source</h2></div>
     <p class="section-intro">Contributing to the tools people build with.</p>
     <article class="contribution">
       <div class="contribution-top"><a class="repo-name" href="https://github.com/deepset-ai/haystack">deepset-ai / <strong>haystack</strong></a><span class="merged">Merged</span></div>
@@ -66,20 +57,19 @@
     </article>
     <a class="quiet-link more-contributions" href="https://github.com/pulls?q=is%3Apr+author%3Asolitarybear">View contributions on GitHub ↗</a>
   </section>
-  <section id="experience" aria-labelledby="experience-title">
-    <div class="section-title"><span class="section-number">04</span><h2 id="experience-title">Experience & community</h2></div>
-    <article class="experience-row"><p class="period">MAY — JUL 2025</p><div><h3>ML Research Intern</h3><p class="organization">IIT (BHU), Varanasi</p><p>Developed ANN and recurrent-network approaches for joint-angle prediction. Worked on sensor fusion for real-time estimation and PPO/SAC reinforcement-learning control, applied to humanoid-robot stability.</p><ul class="tags"><li>Neural networks</li><li>Sensor fusion</li><li>Reinforcement learning</li></ul></div></article>
-    <article class="experience-row"><p class="period">NOV 2025 — PRESENT</p><div><h3>Core Technical Team Member</h3><p class="organization">Spark Robotics Club · IIIT Bhopal</p><p>Contributing to competition robots and hands-on technical workshops, collaborating across design, programming, and deployment.</p></div></article>
-    <article class="experience-row"><p class="period">2024</p><div><h3>College Internal Hackathon · Runner-up</h3><p>Built a precision-agriculture project combining autonomous drone simulation and machine-learning yield prediction.</p></div></article>
+  <section id="about" aria-labelledby="about-title">
+    <div class="section-title"><h2 id="about-title">About</h2></div>
+    <div class="about-copy"><p>I’m an Electronics and Communication Engineering undergraduate drawn to the practical side of AI: how models learn, how we evaluate them, and how they fit into reliable software.</p><p>My work spans multimodal grasp prediction, neural-network research at IIT (BHU), and offline tools for tracking habits and shared expenses. I also contribute fixes to open-source projects, with a focus on clear behavior and regression tests.</p></div>
+    <div class="facts"><div><span>FOCUS</span><p>Machine learning & computer vision</p></div><div><span>EDUCATION</span><p>B.Tech, ECE · IIIT Bhopal<br><small>2023–2027 · Expected June 2027</small></p></div></div>
   </section>
   <section id="skills" aria-labelledby="skills-title">
-    <div class="section-title"><span class="section-number">05</span><h2 id="skills-title">Skills & tools</h2></div>
+    <div class="section-title"><h2 id="skills-title">Skills & tools</h2></div>
     <dl class="skill-list"><div><dt>Languages</dt><dd>Python, C++, SQL, MATLAB</dd></div><div><dt>Machine learning</dt><dd>PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, OpenCV</dd></div><div><dt>GenAI & data</dt><dd>RAG, LangChain / LangGraph, ChromaDB / Pinecone, NumPy, Pandas, ETL pipelines</dd></div><div><dt>Software & deployment</dt><dd>FastAPI, Flask, SQLite, Docker, Git, Linux, Azure, Databricks, ONNX</dd></div></dl>
   </section>
   <!-- Keep public contact links readable without Cloudflare decoding JavaScript. -->
   <!--email_off-->
   <section id="contact" aria-labelledby="contact-title">
-    <div class="section-title"><span class="section-number">06</span><h2 id="contact-title">Get in touch</h2></div>
+    <div class="section-title"><h2 id="contact-title">Get in touch</h2></div>
     <p class="contact-copy">Have a question about my work, an interesting research problem, or a project in mind? Let’s talk.</p>
     <a class="email-link" href="mailto:iiitbhopal23u01070@gmail.com">iiitbhopal23u01070@gmail.com <span aria-hidden="true">↗</span></a>
     <div class="contact-links"><a href="https://github.com/solitarybear">GitHub ↗</a><a href="https://linkedin.com/in/solitarybear">LinkedIn ↗</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=iiitbhopal23u01070%40gmail.com">Write in Gmail ↗</a></div>

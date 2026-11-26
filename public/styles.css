@@ -98,17 +98,6 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15
 .wrap { max-width: 850px; margin: 0 auto; padding: 60px 25px; }
 .text-link { color: var(--accent); }
 :target { scroll-margin-top: 32px; }
-@media (min-width: 1500px) { .content { margin-left: max(245px, calc((100vw - 1150px) / 2)); } }
-@media (max-width: 1100px) { .sidebar { width: 215px; padding-inline: 21px; } .content { margin-left: 215px; padding-inline: 40px; } h1 { letter-spacing: -2px; } .experience-row { grid-template-columns: 125px 1fr; gap: 18px; } }
-@media (max-width: 800px) {
-  .sidebar { position: static; width: auto; padding: 24px; border-right: 0; border-bottom: 1px solid var(--line); }
-  .identity { font-size: 15px; } .sidebar-label, .sidebar-bottom { display: none; }
-  nav { flex-direction: row; flex-wrap: wrap; gap: 4px 19px; margin-top: 22px; }
-  nav a { padding: 4px 0; font-size: 12px; }   .content { margin: 0 auto; padding-inline: 28px; max-width: 720px; }
-  .hero { padding-top: 48px; } .hello { margin-top: 32px; } h1 { font-size: clamp(38px, 8vw, 62px); }
-  .lead { font-size: 23px; } .hero-foot { margin-top: 35px; } section { padding-block: 45px; }
-  .section-title { gap: 10px; } h2 { font-size: 24px; } .project { padding: 21px; }
-}
 @media (max-width: 530px) {
   .content { padding-inline: 23px; } .projects { grid-template-columns: 1fr; }
   h1 { letter-spacing: -1.8px; } .lead { font-size: 21px; } .hero-summary { font-size: 14px; }
@@ -120,3 +109,28 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15
   .contribution-bottom { align-items: flex-start; flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.mast { border-bottom: 1px solid var(--line); background: var(--bg); }
+.mast-inner, .content { width: min(100%, 1000px); margin: auto; padding-inline: clamp(20px, 5vw, 56px); }
+.mast-inner { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-block: 18px; }
+.wordmark { font: 600 18px/1.2 ui-monospace, monospace; letter-spacing: -1px; }
+.wordmark span, .location { color: var(--accent); }
+nav { flex-direction: row; flex-wrap: wrap; gap: 2px; }
+.hero { padding: clamp(58px, 10vw, 114px) 0 64px; border-bottom: 1px solid var(--line); }
+.hello { font: 16px/1.5 ui-monospace, monospace; margin: 0 0 10px; color: var(--muted); }
+.hero h1 { font-size: clamp(52px, 8vw, 96px); letter-spacing: -.065em; line-height: 1.04; }
+.hero-summary { font-size: clamp(17px, 2vw, 21px); max-width: 560px; line-height: 1.6; }
+.location { font: 13px/1.6 ui-monospace, monospace; margin-top: 18px; }
+.experience-row { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; margin-top: 12px; }
+.experience-row, .experience-row:first-of-type, .experience-row:last-child { padding: 24px; border: 1px solid var(--line); }
+.project { border-radius: 12px; }
+@media (hover: hover) and (pointer: fine) {
+  .project:focus-within, .project:hover { border-color: var(--accent); }
+}
+.button:active { transform: scale(.98); }
+@media (max-width: 700px) {
+  .mast-inner { align-items: flex-start; flex-direction: column; gap: 10px; }
+  nav { gap: 4px 14px; }
+  nav a { padding: 4px 0; font-size: 13px; }
+  .section-link { padding-left: 0; }
+}
